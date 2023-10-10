@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="body-game">
+    <header class="header">
+        <div class="hamburguer-and-logo">
+            <label class="hamburguer-button">
+                <input type="checkbox" class="menu">
+            </label>
+            <a href="index.html"><img src="images/Logo.png" alt="oldies but goldies" class="logo-img"></a>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Buscar">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div>
+            <button type="submit" class="cart"><img src="images/icons/Vector.svg" alt="go-to-cart"></button>
+            <button type="submit" class="profile-menu"></button>
+        </div>
+    </header>
+    <main>
+        <div class="loader-bg">
+            <div class="loader">
+                <p class="loader-percentage">Cargando...0%</p>
+            </div>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <aside class="sidebar">
+            <nav>
+                <a href="index.html">
+                    <img src="images/icons/Home.svg" alt="">
+                    <p class="nav-font">Inicio</p>
+                </a>
+                <a>
+                    <img src="images/icons/Favorites.svg" alt="">
+                    <p class="nav-font">Favoritos</p>
+                </a>
+                <a>
+                    <img src="images/icons/Recent.svg" alt="">
+                    <p class="nav-font">Recientes</p>
+                </a>
+                <a>
+                    <img src="images/icons/Trending.svg" alt="">
+                    <p class="nav-font">Tendencias</p>
+                </a>
+                <a>
+                    <img src="images/icons/Random.svg" alt="">
+                    <p class="nav-font">Aleatorio</p>
+                </a>
+            </nav>
+        </aside>
+        <aside class="profile-sidebar">
+            <nav>
+                <div>
+                    <div>
+                        <button><img src="images/planta.png" alt=""></button>
+                        <p class="body-bold">Mariobros-fan</p>
+                        <p class="small-font">mbfan@supernintendo.com.ar</p>
+                    </div>
+                    <a>
+                        <img src="images/icons/Profile.svg" alt="">
+                        <p class="nav-font">Mi Perfil</p>
+                    </a>
+                    <a>
+                        <img src="images/icons/Edit profile.svg" alt="">
+                        <p class="nav-font">Editar perfil</p>
+                    </a>
+                    <a>
+                        <img src="images/icons/Configuration.svg" alt="">
+                        <p class="nav-font">Configuracion</p>
+                    </a>
+                    <a href="form-users.html">
+                        <img src="images/icons/Logout.svg" alt="">
+                        <p class="nav-font">Salir</p>
+                    </a>
+                </div>
+                <a>
+                    <img src="images/icons/Soporte.svg" alt="">
+                    <p class="nav-font">Soporte</p>
+                </a>
+            </nav>
+        </aside>
+        <div class="game-content">
+            <div class="game-container">
+                <div class="gameplay">
+                    <div class="top-bar">
+                        <div class="breadcrumbs">
+                            <a href="index.html">
+                                <p>Inicio</p>
+                            </a>
+                            <span>></span>
+                            <p>Juegos</p>
+                            <span>></span>
+                            <p>Juegos Multijugador</p>
+                            <span>></span>
+                            <p>Duck vs Dog</p>
+                        </div>
+                        <div>
+                            <img src="images/puntuacion.svg" alt="Puntuacion del juego">
+                            <img src="images/like.svg" alt="Boton me gusta">
+                            <img src="images/dislike.svg" alt="Boton no me gusta">
+                        </div>
+                    </div>
+                    <div class="game-display">
+                        <img src="images/portada.png" alt="">
+                    </div>
+                    <div class="bottom-bar">
+                        <p>Duck vs Dog</p>
+                        <div>
+                            <img src="images/game-favorite.svg" alt="Boton agregar a mis favoritos">
+                            <img src="images/game-volume.svg" alt="Boton control de volumen">
+                            <img src="images/game-controller.svg" alt="Boton controles">
+                            <img src="images/game-fullscreen.svg" alt="Boton expandir pantalla">
+                        </div>
+                    </div>
+                </div>
+                <div class="game-description">
+                    <div>
+                        <p>En la tierra del misterioso pantano de Duck Hunt, te enfrentarás a un emocionante desafío. Tu
+                            objetivo es conectar cuatro fichas de tu intrépido personaje, Duck o Dog, en línea vertical,
+                            horizontal o diagonal.
+                            Lucha por la supremacía en medio de los cañaverales y los reflejos del agua. ¡Demuestra
+                            quién es
+                            el rey del pantano en este enfrentamiento épico, donde cada movimiento cuenta en la caza de
+                            la
+                            victoria!</p>
+                    </div>
+                    <div class="banner"><img src="images/banner publi.png" alt="Banner publicitario"></div>
+                    <div class="description-sections">
+                        <div class="description-section">
+                            <div><img src="images/info.svg" alt="Icono informacion">
+                                <p>¿Cómo jugar?</p>
+                            </div>
+                            <div>
+                                <p>Selecciona a tu personaje favorito. En cada turno, uno de los jugadores elige una
+                                    columna
+                                    donde desea colocar su ficha de Duck o Dog.
+                                    Desplázate con el mouse/mousepad sobre las columnas y haz click en la columna que
+                                    quieras que caiga la ficha
+                                    El jugador que logre colocar cuatro de sus fichas en línea vertical, horizontal o
+                                    diagonal ¡gana la partida!
+                                    Recuerda que el juego se basa en la estrategia y la anticipación, ya que debes
+                                    bloquear
+                                    a tu oponente mientras intentas formar tu propia línea de cuatro fichas. ¡Diviértete
+                                    jugando Duck vs Dog!</p>
+                            </div>
+                        </div>
+                        <div class="description-section">
+                            <div><img src="images/controller.svg" alt="Icono controles">
+                                <p>Controles</p>
+                            </div>
+                            <div class="game-controls">
+                                <p>Desplázate con el mouse/mousepad sobre las columnas y haz click en la columna que
+                                    quieras
+                                    que caiga la ficha</p>
+                                <div><img src="images/clickear.svg" alt=""><img src="images/mover.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="description-section">
+                            <div><img src="images/compartir.svg" alt="Icono compartir">
+                                <p>Compartir</p>
+                            </div>
+                            <p>¡Comparte Duck vs Dog en tus redes!</p>
+                            <div>
+                                <div class="comunity-link-container">
+                                    <div class="comunity-link"><img src="images/icons/Rounded-square-instagram.svg"
+                                            alt="Link a comunidad en instagram"></div>
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="comunity-link-container">
+                                    <div class="comunity-link"><img src="images/icons/Rounded-square-facebook.svg"
+                                            alt="Link a comunidad en facebook"></div>
+                                    <p>Facebook</p>
+                                </div>
+                                <div class="comunity-link-container">
+                                    <div class="comunity-link"><img src="images/icons/Rounded-square-youtube.svg"
+                                            alt="Link a comunidad en youtube"></div>
+                                    <p>Youtube</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-section">
+                            <div><img src="images/comentario.svg" alt="Icono comentarios">
+                                <p>Comentarios</p>
+                            </div>
+                            <div class="comment-section">
+                                <div class="comment-container">
+                                    <div class="comment-profile">
+                                        <div>
+                                            <img src="images/profile-pic.svg" alt="Tu foto de perfil">
+                                            <p>Tú</p>
+                                        </div>
+                                        <a href="form-users.html">Debes registrate para comentar</a>
+                                    </div>
+                                    <div class="comment-edit">
+                                        <div class="comment-text">
+                                            <input type="text" placeholder="¿Qué piensas del juego?">
+                                        </div>
+                                        <div><img src="images/editar.svg" alt="Editar comentario"></div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="comment-profile">
+                                        <div>
+                                            <img src="images/profile-pic.svg" alt="Tu foto de perfil">
+                                            <p>Ramon</p>
+                                        </div>
+                                        <img src="images/puntuacion.svg" alt="Editar comentario">
+                                    </div>
+                                    <div class="comment-text">
+                                        <p>Es genial para desconectar y relajarse. Aunque me encantan los juegos más
+                                            complejos, 'Duck vs Dog' es mi elección cuando quiero algo simple pero
+                                            entretenido.</p>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="comment-profile">
+                                        <div>
+                                            <img src="images/profile-pic.svg" alt="Tu foto de perfil">
+                                            <p>Lucia</p>
+                                        </div>
+                                        <img src="images/puntuacion.svg" alt="Editar comentario">
+                                    </div>
+                                    <div class="comment-text">
+                                        <p>Es genial para desconectar y relajarse. Aunque me encantan los juegos más
+                                            complejos, 'Duck vs Dog' es mi elección cuando quiero algo simple pero
+                                            entretenido.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ads-and-others">
+                <div class="game-carousel">
+                    <div class="large"><img src="images/game-carousel-large.png" alt=""></div>
+                    <div class="small1"><img src="images/game-carousel-large.png" alt=""></div>
+                    <div class="small2"><img src="images/game-carousel-small2.png" alt=""></div>
+                    <div class="small3"><img src="images/game-carousel-small3.png" alt=""></div>
+                </div>
+                <div class="ad">
+                    <img src="images/propaganda1.png" alt="">
+                </div>
+                <p>Mas como Duck vs Dog</p>
+                <div class="card-cluster-category">
+                    <div class="category-card"><img src="images/TicTacToe.png" alt=""></div>
+                    <div class="category-card"><img src="images/tetris.png" alt=""></div>
+                    <div class="category-card"><img src="images/solitario.png" alt=""></div>
+                    <div class="category-card"><img src="images/carrousel/space-invader.png" alt=""></div>
+                </div>
+                <div class="ad">
+                    <img src="images/propaganda2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p class="title">Sobre Oldies</p>
+            <p>¡Bienvenido a Oldies, tu portal de nostalgia gamer! Sumérgete en la era dorada de los videojuegos con
+                nosotros.
+                Explorá los clásicos de consola que marcaron nuestras infancias. Reviví la magia de Sega, Nintendo,
+                Family, PlayStation y más.
+                Únete a la comunidad que celebra los juegos que marcaron una generación.
+                ¡Vive la nostalgia, juega los Oldies!</p>
+        </div>
+        <div>
+            <div>
+                <p class="title">Explorar</p>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Juegos</li>
+                    <li>Noticias</li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Recomendaciones</p>
+                <ul>
+                    <li>Juegos de accion</li>
+                    <li>Juegos de aventura</li>
+                    <li>Juegos de estrategia</li>
+                    <li>Juegos de simulacion</li>
+                    <li>Mas categorias</li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Ayuda</p>
+                <ul>
+                    <li>Terminos de pago</li>
+                    <li>Contacto</li>
+                    <li>FAQ</li>
+                    <li>Publicidad</li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Comunidad</p>
+                <p>Unete a la comunidad de Oldies!</p>
+                <div>
+                    <div class="comunity-link"><img src="images/icons/Rounded-square-instagram.svg"
+                            alt="Link a comunidad en instagram"></div>
+                    <div class="comunity-link"><img src="images/icons/Rounded-square-facebook.svg"
+                            alt="Link a comunidad en facebook"></div>
+                    <div class="comunity-link"><img src="images/icons/Rounded-square-youtube.svg"
+                            alt="Link a comunidad en youtube"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Politica de privacidad</a></li>
+                <li><a href="">Aviso legal y condiciones de uso</a></li>
+                <li><a href="">Politica de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

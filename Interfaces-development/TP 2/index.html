@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oldies</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body-home">
+    <header class="header">
+        <div class="hamburguer-and-logo">
+            <label class="hamburguer-button">
+                <input type="checkbox" class="menu">
+            </label>
+            <img src="images/Logo.png" alt="oldies but goldies" class="logo-img">
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Buscar">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div>
+            <button type="submit" class="cart"><img src="images/icons/Vector.svg" alt="go-to-cart"></button>
+            <button type="submit" class="profile-menu"></button>
+        </div>
+    </header>
+    <main>
+        <div class="loader-bg">
+            <div class="loader">
+                <p class="loader-percentage">Cargando...0%</p>
+            </div>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <aside class="sidebar">
+            <nav>
+                <a href="index.html">
+                    <img src="images/icons/Home.svg" alt="">
+                    <p class="nav-font">Inicio</p>
+                </a>
+                <a>
+                    <img src="images/icons/Favorites.svg" alt="">
+                    <p class="nav-font">Favoritos</p>
+                </a>
+                <a>
+                    <img src="images/icons/Recent.svg" alt="">
+                    <p class="nav-font">Recientes</p>
+                </a>
+                <a>
+                    <img src="images/icons/Trending.svg" alt="">
+                    <p class="nav-font">Tendencias</p>
+                </a>
+                <a>
+                    <img src="images/icons/Random.svg" alt="">
+                    <p class="nav-font">Aleatorio</p>
+                </a>
+            </nav>
+        </aside>
+        <aside class="profile-sidebar">
+            <nav>
+                <div>
+                    <div>
+                        <button><img src="images/planta.png" alt=""></button>
+                        <p class="body-bold">Mariobros-fan</p>
+                        <p class="small-font">mbfan@gmail.com.ar</p>
+                    </div>
+                    <a>
+                        <img src="images/icons/Profile.svg" alt="">
+                        <p class="nav-font">Mi Perfil</p>
+                    </a>
+                    <a>
+                        <img src="images/icons/Edit profile.svg" alt="">
+                        <p class="nav-font">Editar perfil</p>
+                    </a>
+                    <a>
+                        <img src="images/icons/Configuration.svg" alt="">
+                        <p class="nav-font">Configuracion</p>
+                    </a>
+                    <a href="form-users.html">
+                        <img src="images/icons/Logout.svg" alt="">
+                        <p class="nav-font">Salir</p>
+                    </a>
+                </div>
+                <a>
+                    <img src="images/icons/Soporte.svg" alt="">
+                    <p class="nav-font">Soporte</p>
+                </a>
+            </nav>
+        </aside>
+        <div class="content">
+            <div class="hero">
+                <p>Recomendacion semanal</p>
+                <div class="carousel">
+                    <a class="hero-card" href="game.html"><img src="images/carrousel/duckvsdog.png" alt="Duck vs Dog"></a>
+                    <div class="card-cluster">
+                        <div class="half-card"><img src="images/carrousel/breakout arkanoid.png" alt=""></div>
+                        <div class="half-card"><img src="images/carrousel/buscaminas.png" alt=""></div>
+                        <div class="half-card"><img src="images/carrousel/pacman.png" alt=""></div>
+                        <div class="half-card"><img src="images/carrousel/Pinball 1.png" alt=""></div>
+                        <div class="half-card"><img src="images/carrousel/tetris.png" alt=""></div>
+                        <div class="half-card"><img src="images/carrousel/space-invader.png" alt=""></div>
+                        <div class="half-card"><img src="images/carrousel/solitario.png" alt=""></div>
+                        <div class="half-card"><img src="images/TicTacToe.png" alt=""></div>
+                    </div>
+                    <button class="hero-after"><img src="images/icons/after.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="category">
+                <p>Accion</p>
+                <div class="carousel">
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/mortal kombat.png" alt="">
+                        </div>
+                        <p class="game-title">Mortal Kombat</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$10</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">GRATIS</p>
+                            <img src="images/carrousel/Doom II.png" alt="">
+                        </div>
+                        <p class="game-title">Doom</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price"></p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">GRATIS</p>
+                            <img src="images/carrousel/worms armaggedon.png" alt="">
+                        </div>
+                        <p class="game-title">Worms armaggedon</p>
+                        <div class="game-in-collection">
+                            <p>En coleccion</p>
+                            <img src="images/icons/Check.svg" alt="en coleccion">
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/Ninja Gaiden 1.png" alt="">
+                        </div>
+                        <p class="game-title">Ninja Gaiden 1</p>
+                        <div class="game-in-collection">
+                            <p>En coleccion</p>
+                            <img src="images/icons/Check.svg" alt="en coleccion">
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">PAGO</p>
+                            <img src="images/carrousel/Megaman.png" alt="">
+                        </div>
+                        <p class="game-title">Megaman</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$15</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">GRATIS</p>
+                            <img src="images/carrousel/Dynamite Headdy.png" alt="">
+                        </div>
+                        <p class="game-title">Dynamite Headdy</p>
+                        <div class="game-in-collection">
+                            <p>En coleccion</p>
+                            <img src="images/icons/Check.svg" alt="en coleccion">
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/Championship pro-am.png" alt="">
+                        </div>
+                        <p class="game-title">Championship pro-am</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$10</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/Aladin.png" alt="">
+                        </div>
+                        <p class="game-title">Aladin</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$5</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/Street fighter.png" alt="">
+                        </div>
+                        <p class="game-title">Street Fighter</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$23</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <p>Aventura</p>
+                <div class="carousel">
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/mickey mania.png" alt="">
+                        </div>
+                        <p class="game-title">Mickey Mania</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$5</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">GRATIS</p>
+                            <img src="images/carrousel/the legend of zelda.png" alt="">
+                        </div>
+                        <p class="game-title">Legend of Zelda</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price"></p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">GRATIS</p>
+                            <img src="images/carrousel/Tiny toons.png" alt="">
+                        </div>
+                        <p class="game-title">Tiny Toons</p>
+                        <div class="game-in-collection">
+                            <p>En coleccion</p>
+                            <img src="images/icons/Check.svg" alt="en coleccion">
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/donkey kong country.png" alt="">
+                        </div>
+                        <p class="game-title">Donkey Kong Country</p>
+                        
+                        <div class="game-in-collection">
+                            <p>En coleccion</p>
+                            <img src="images/icons/Check.svg" alt="en coleccion">
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">PAGO</p>
+                            <img src="images/carrousel/Super mario 1.png" alt="">
+                        </div>
+                        <p class="game-title">Super Mario 1</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$21</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type free">GRATIS</p>
+                            <img src="images/carrousel/bomberman.png" alt="">
+                        </div>
+                        <p class="game-title">Bomberman</p>
+                        <div class="game-in-collection">
+                            <p>En coleccion</p>
+                            <img src="images/icons/Check.svg" alt="en coleccion">
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-image">
+                            <p class="game-type paid">PAGO</p>
+                            <img src="images/carrousel/Snow bros 1.png" alt="">
+                        </div>
+                        <p class="game-title">Snow Bros</p>
+                        <div class="game-price-and-cart">
+                            <p class="game-price">$10</p>
+                            <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <p>Estrategia</p>
+                <div class="carousel">
+                    <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type paid">PAGO</p>
+                        <img src="images/carrousel/Pinball 1.png" alt="">
+                    </div>
+                    <p class="game-title">Pinball 1</p>
+                    <div class="game-price-and-cart">
+                        <p class="game-price">$3</p>
+                        <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                    </div>
+                </div>
+                <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type free">GRATIS</p>
+                        <img src="images/carrousel/duckvsdog miniature.png" alt="">
+                    </div>
+                    <p class="game-title">Duck vs Dog</p>
+                    <div class="game-price-and-cart">
+                        <p class="game-price"></p>
+                        <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                    </div>
+                </div>
+                <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type free">GRATIS</p>
+                        <img src="images/carrousel/space-invader.png" alt="">
+                    </div>
+                    <p class="game-title">Space Invaders</p>
+                    <div class="game-in-collection">
+                        <p>En coleccion</p>
+                        <img src="images/icons/Check.svg" alt="en coleccion">
+                    </div>
+                </div>
+                <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type paid">PAGO</p>
+                        <img src="images/carrousel/breakout arkanoid.png" alt="">
+                    </div>
+                    <p class="game-title">Breakout Arkanoid</p>
+                    <div class="game-in-collection">
+                        <p>En coleccion</p>
+                        <img src="images/icons/Check.svg" alt="en coleccion">
+                    </div>
+                </div>
+                <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type free">PAGO</p>
+                        <img src="images/carrousel/pacman.png" alt="">
+                    </div>
+                    <p class="game-title">Pac-Man</p>
+                    <div class="game-price-and-cart">
+                        <p class="game-price">$8</p>
+                        <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                    </div>
+                </div>
+                <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type free">GRATIS</p>
+                        <img src="images/carrousel/buscaminas.png" alt="">
+                    </div>
+                    <p class="game-title">Buscaminas</p>
+                    <div class="game-in-collection">
+                        <p>En coleccion</p>
+                        <img src="images/icons/Check.svg" alt="en coleccion">
+                    </div>
+                </div>
+                <div class="full-card">
+                    <div class="card-image">
+                        <p class="game-type paid">PAGO</p>
+                        <img src="images/carrousel/tetris.png" alt="">
+                    </div>
+                    <p class="game-title">Tetris</p>
+                    <div class="game-price-and-cart">
+                        <p class="game-price">$2</p>
+                        <button type="submit" class="card-cart"><img src="images/icons/card-cart.svg" alt="agregar a carrito"></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <p class="title">Sobre Oldies</p>
+            <p>¡Bienvenido a Oldies, tu portal de nostalgia gamer! Sumérgete en la era dorada de los videojuegos con nosotros.
+                Explorá los clásicos de consola que marcaron nuestras infancias. Reviví la magia de Sega, Nintendo, Family, PlayStation y más.
+                Únete a la comunidad que celebra los juegos que marcaron una generación.
+                ¡Vive la nostalgia, juega los Oldies!</p>
+        </div>
+        <div class="footer-categories">
+            <div>
+                <p class="title">Explorar</p>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Juegos</li>
+                    <li>Noticias</li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Recomendaciones</p>
+                <ul>
+                    <li>Juegos de accion</li>
+                    <li>Juegos de aventura</li>
+                    <li>Juegos de estrategia</li>
+                    <li>Juegos de simulacion</li>
+                    <li>Mas categorias</li>
+                </ul>
+            </div>
+            <div>
+                <p class="title">Ayuda</p>
+                <ul>
+                    <li>Terminos de pago</li>
+                    <li>Contacto</li>
+                    <li>FAQ</li>
+                    <li>Publicidad</li>                    
+                </ul>
+            </div>
+            <div>
+                <p class="title">Comunidad</p>
+                <p class="comunity-inv">Unete a la comunidad de Oldies!</p>
+                <div class="comunity-links">
+                    <div class="comunity-link"><img src="images/icons/Rounded-square-instagram.svg" alt="Link a comunidad en instagram"></div>
+                    <div class="comunity-link"><img src="images/icons/Rounded-square-facebook.svg" alt="Link a comunidad en facebook"></div>
+                    <div class="comunity-link"><img src="images/icons/Rounded-square-youtube.svg" alt="Link a comunidad en youtube"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Politica de privacidad</a></li>
+                <li><a href="">Aviso legal y condiciones de uso</a></li>
+                <li><a href="">Politica de cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>

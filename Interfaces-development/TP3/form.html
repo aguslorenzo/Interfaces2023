@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Oldies</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body-form">
+    <div>
+        <a href="index.html"><img src="images/Logo.png" alt="oldies but goldies" class="logo-img"></a>
+        <div class="eye-candy">
+            <h1 id="eye-candy-font">Dale play a la nostalgia</h1>
+            <img src="images/forma-login.png" alt="formas abstractas">
+        </div>
+    </div>
+    <div class="form-container">
+        <h1>Crear Cuenta</h1>
+        <div class="form-fields">
+            <div>  
+                <input type="text" name="full-name" required="required">
+                <label for="full-name">Nombre </label>
+            </div>
+            <div>
+                <input type="text" name="full-surname" required="required">
+                <label for="surname">Apellido </label>
+            </div>
+            <div>
+                <input type="email" name="email" required="required">
+                <label for="email">Email </label>
+            </div>
+            <div>
+                <input type="password" name="password" required="required">
+                <label for="password">Contraseña </label>
+            </div>
+            <div>
+                <input type="password" name="password" required="required">
+                <label for="repeat-password">Repetir contraseña </label>
+            </div>
+            <div>
+                <img src="images/captcha.png" alt="captcha">
+            </div>
+            <div class="submitbtn">
+                <svg class="spinner" xmlns="http://www.w3.org/2000/svg" height="1em" fill="#F8F4FF" viewBox="0 0 512 512"><path d="M222.7 32.1c5 16.9-4.6 34.8-21.5 39.8C121.8 95.6 64 169.1 64 256c0 106 86 192 192 192s192-86 192-192c0-86.9-57.8-160.4-137.1-184.1c-16.9-5-26.6-22.9-21.5-39.8s22.9-26.6 39.8-21.5C434.9 42.1 512 140 512 256c0 141.4-114.6 256-256 256S0 397.4 0 256C0 140 77.1 42.1 182.9 10.6c16.9-5 34.8 4.6 39.8 21.5z"/></svg>
+                <span class="btn-text">Crear cuenta</span>
+            </div>
+        </div>
+
+        <div class="login-form"><p>¿Ya tienes cuenta? <a href="form-users.html">Iniciar sesión</a></p></div>
+        <div class="or-container">o</div>
+        <div class="other-logins">
+            <button><img src="images/google-logo.svg" alt="google-logo">Registrarse con Google</button>
+            <button><img src="images/facebook-logo.svg" alt="facebook-logo">Registrarse con Facebook</button>
+        </div>        
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>

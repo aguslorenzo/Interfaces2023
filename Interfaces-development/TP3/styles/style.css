@@ -258,7 +258,7 @@ p.nav-font{
 
 .searchbar input{
     background: transparent;
-    flex: 1; /* Agranda el input? parece, comprobar*/
+    flex: 1;
     outline: none; /* Esto hace que al seleccionarlo no le ponga un marquito*/
     border: 0;
     padding: 1.5rem 1.25rem;
@@ -267,9 +267,6 @@ p.nav-font{
 
 .searchbar button img{
     width: 100%;
-    /*
-        estaría bueno darle color de la paleta
-    */
 }
 
 .searchbar button{
@@ -337,7 +334,7 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 columnas de igual ancho */
     grid-template-rows: repeat(2, auto); /* 2 filas de altura automática */
-    gap: 10px; /* Espacio entre las celdas (puedes ajustarlo según tus necesidades) */
+    gap: 10px;
 }
 
 .hero .carousel{
@@ -442,7 +439,6 @@ main{
 }
 
 .card-image{
-    /* background-image: url('../images/cards/mk-trillogy.png'); */
     min-height: 200px;
     min-width: 100px;
     position: relative;
@@ -652,7 +648,6 @@ footer a{
 }
 
 
-/* CENTER THIS LATER ON */
 footer> div:last-child ul :nth-child(2)::before{
     content: '•';
     padding: 5rem;
@@ -855,7 +850,6 @@ div .reset-password {
     font-size: 14px;
     color: var(--secundario-l1);
 }
-/* CORREGIR pseudo-clases cuando no ingresa bien el input el usuario */
 
 #game-preview {
     height: 100%;
@@ -1024,7 +1018,7 @@ input:checked + div.checkbox-img {
 }
 
 .breadcrumbs p, .breadcrumbs span{
-    color: var(--secundario-l1); /*TODO mejorar contraste */
+    color: var(--secundario-l1);
 }
 
 .bottom-bar{
@@ -1070,7 +1064,7 @@ input:checked + div.checkbox-img {
 
 #victory-screen button {
     font-family: 'VT323', 'Roboto';
-    background-color: var(--secundario-l1); /* Estiliza el botón a tu gusto */
+    background-color: var(--secundario-l1);
     border-radius: 5px;
     color: var(--blanco);
     font-size: 18px;
@@ -1080,23 +1074,21 @@ input:checked + div.checkbox-img {
     border: none;
 }
 
-#players-turn{
-    padding-top: 0.5rem;
+#extras{
+    font-family: 'VT323', 'Roboto';
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    background-color: transparent;
-    text-align: right;
+    padding-top: 0.1rem;
     z-index: 0;
+    font-size: var(--body);
+    color: var(--blanco);
+    user-select: none;
 }
 
-#countdown-timer{
-    padding-top: 0.5rem;
-    position: absolute;
+#extras button{
     background-color: transparent;
-    text-align: right;
-    z-index: 0;
-    color: var(--blanco);
-    font-size: var(--body);
-    user-select: none;
+    border-style: none;
 }
 
 .description-section{
@@ -1313,12 +1305,10 @@ div .comment-profile > a {
 
 .game-carousel .small2{
     grid-area: small2;
-    /* background-color: var(--acento);*/
 } 
 
 .game-carousel .small3{
     grid-area: small3;
-    /* background-color: var(--verde); */
 }
 
 @media screen and (max-width:480px) {  

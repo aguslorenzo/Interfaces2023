@@ -10,9 +10,6 @@ class Cell{
         this.chip=null;
     }
 
-    /**
-     * Inicio tablero seteando fondo y casilleros vacios
-     */
     draw(){
         this.ctx.fillStyle = this.fill;
         this.ctx.fillRect(this.posX,this.posY, this.width, this.height);

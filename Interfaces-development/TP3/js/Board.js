@@ -50,41 +50,25 @@ class Board {
           }
     }
 
-    /* draw(){
-        this.ctx.drawImage(this.background, this.posX, this.posY);
-        for (var i = 0; i < this.rows; i++) {
-            for (var j = 0; j < this.columns; j++) {
-                if(this.matrix[i][j].getChip()!=null){
-                    this.matrix[i][j].getChip().draw();
-                }
-                else{
-                    this.matrix[i][j].draw();
-                }
-            }
-        }
-    } */
-
     draw() {
         this.ctx.save();
     
         // Crear una sombra para el tablero
-        this.ctx.shadowColor = 'rgba(0, 0, 0, 0.8';  // Cambiar el valor de opacidad
-        this.ctx.shadowBlur = 8;  // Aumentar la intensidad de la sombra
+        this.ctx.shadowColor = 'rgba(0, 0, 0, 0.8';
+        this.ctx.shadowBlur = 8;// Aumentar la intensidad de la sombra
         this.ctx.shadowOffsetX = 4;
         this.ctx.shadowOffsetY = 4;
     
         // Dibujar el tablero con un gradiente para dar una sensación de profundidad
         let gradient = this.ctx.createLinearGradient(this.posX, this.posY, this.posX, this.posY + this.height);
-        gradient.addColorStop(0, '#000000');  // Cambia este color para el fondo
-        gradient.addColorStop(1, '#333333');  // Cambia este color para el borde del tablero
+        gradient.addColorStop(0, '#000000');
+        gradient.addColorStop(1, '#333333');
     
         this.ctx.fillStyle = gradient;
         this.ctx.fillRect(this.posX, this.posY, this.width, this.height);
     
-        // Dibuja la imagen de fondo del tablero
         this.ctx.drawImage(this.background, this.posX, this.posY, this.width, this.height);
     
-        // Dibuja las celdas con el color del tablero
         for (var i = 0; i < this.rows; i++) {
             for (var j = 0; j < this.columns; j++) {
                 if (this.matrix[i][j].getChip() != null) {
@@ -98,6 +82,7 @@ class Board {
         this.ctx.restore();
     }    
 
+    //Resetea el estilo de las fichas del tablero, las "des-resalta"
     restore(){
         for (var i = 0; i < this.rows; i++) {
             for (var j = 0; j < this.columns; j++) {
@@ -117,14 +102,14 @@ class Board {
                 chip.setDefaultStyle();
                 this.matrix[i][column].setChip(chip);
                 if(this.check(i,column,chip)){
-                    return 1;
+                    return 1; //Si ganó
                 }
                 else{
-                    return 0
+                    return 0 //Si coloco bien pero no gano
                 }
             }
         }
-        return -1; //NOTA: si ya está llena la columna
+        return -1; //Si ya está llena la columna
     }
 
     check(row, column, chip) {
@@ -151,7 +136,7 @@ class Board {
     
     checkHorizontal(row,column,chip){
         let count = 1;
-        chip.setResaltado('red');
+        chip.setResaltado('red'); //Marco a medida caen fichas, si aun no gana, se llama a Restore() para des-marcar
         // Comprueba hacia la derecha
         let i = column + 1;
         while (i < this.columns) {
@@ -204,7 +189,7 @@ class Board {
 
         while(i<this.rows && j<this.columns){
             let current = this.matrix[i][j].getChip();
-            if (current === null || current.getImg() !== chip.getImg()){ //TODO implementar equals en chip.
+            if (current === null || current.getImg() !== chip.getImg()){
                 break;
             }
             this.matrix[i][j].getChip().setResaltado('red');
@@ -217,7 +202,7 @@ class Board {
         j=column-1;
         while(i>0 && j>0){
             let current = this.matrix[i][j].getChip();
-            if (current === null || current.getImg() !== chip.getImg()){ //TODO implementar equals en chip.
+            if (current === null || current.getImg() !== chip.getImg()){
                 break;
             }
             this.matrix[i][j].getChip().setResaltado('red');
@@ -235,7 +220,7 @@ class Board {
         j=column+1;
         while(i>0 && j<this.columns){
             let current = this.matrix[i][j].getChip();
-            if (current === null || current.getImg() !== chip.getImg()){ //TODO implementar equals en chip.
+            if (current === null || current.getImg() !== chip.getImg()){
                 break;
             }
             this.matrix[i][j].getChip().setResaltado('red');
@@ -248,7 +233,7 @@ class Board {
         j=column-1;
         while(i<this.rows && j>0){
             let current = this.matrix[i][j].getChip();
-            if (current === null || current.getImg() !== chip.getImg()){ //TODO implementar equals en chip.
+            if (current === null || current.getImg() !== chip.getImg()){
                 break;
             }
             this.matrix[i][j].getChip().setResaltado('red');

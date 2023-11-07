@@ -22,14 +22,12 @@ class Game {
 
         // Obtener una referencia al elemento del temporizador
         this.countdownTimer = document.querySelector("#countdown-timer");
-        this.countdownTimer.style.display="block";
-        this.countdownTimer.style.left= (this.width+25)+"px";
         // Iniciar el temporizador
         this.startTimer();
 
         this.playersTurn = document.querySelector("#players-turn");
-        this.playersTurn.style.display="block";
-        this.playersTurn.style.left=(this.width-244)+"px"
+
+        this.setExtras();
     }
 
     deal(img1,img2){
@@ -80,7 +78,9 @@ class Game {
                 let cellEnd = firstRow[i].getPosX()+firstRow[i].getWidth();
                 if(droppedChip.getPosX()<cellEnd){
                     let value= this.board.placeChip(droppedChip,i);
+                    //comprueba que la columna no esté llena
                     if(value!=-1){
+                        //comprueba si se llego al minimo de fichas para ganar
                         if(value==1){
                             this.winner=this.currentTurn;
                         }
@@ -135,6 +135,7 @@ class Game {
         }
     }
     
+    //dibuja las flechas sobre cada columna
     drawIndicator(){
         let firstRow = this.board.getRow(0);
         let arrow = document.querySelector("#arrow-down");
@@ -145,6 +146,7 @@ class Game {
         }
     }
 
+    //muestra el div de victoria con sus botones
     drawWinnerMessage() {
         let victoryDiv = document.querySelector("#victory-screen");
         victoryDiv.style.display="block";
@@ -156,6 +158,7 @@ class Game {
         victoryDiv.style.left=this.width/2+"px";
     }
 
+    //reutiliza el div de victoria cambiando los valores a empate
     drawTie(){
         let victoryDiv = document.querySelector("#victory-screen");
         victoryDiv.style.display="block";
@@ -163,8 +166,6 @@ class Game {
         gameResult.innerHTML = "Empate";
         let winnerP = document.querySelector("#winner");
         winnerP.innerHTML="";
-/*         let timeP = document.querySelector("#time-elapsed");
-        timeP.innerHTML = "Se acabó el timepo"; */
         victoryDiv.style.top=this.height/2+"px";
         victoryDiv.style.left=this.width/2+"px";
     }
@@ -180,7 +181,7 @@ class Game {
 
     updateTimer() {
         if (this.winner) {
-            // Detén el temporizador si hay un ganador.
+            // Detiene el temporizador si hay un ganador.
             clearInterval(this.timerInterval);
             return;
         }
@@ -197,6 +198,15 @@ class Game {
         if (this.currentTime > 0) {
             this.currentTime--;
         }
+    }
+
+    //div de turno y temporizador
+    setExtras(){
+        let extras = document.querySelector("#extras");
+        extras.style.display="flex";
+        extras.style.width=this.width-board.getWidth()-20+"px";
+        extras.style.left=(this.width-250)+"px";
+        extras.style.top=(this.height)+100+"px";
     }
 
     reset(){

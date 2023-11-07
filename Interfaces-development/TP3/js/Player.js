@@ -4,9 +4,6 @@ class Player{
 
     chips = [];
 
-    /**
-     * @param {*} username
-     */
     constructor(username){
         this.username=username;
     }

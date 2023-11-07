@@ -19,7 +19,7 @@ class Chip{
         return this.borderColor;
     }
 
-    setResaltado(resaltado){//TODO spanglish
+    setResaltado(resaltado){
         this.borderColor = resaltado;
         this.borderWidth = 3;
     }
@@ -74,25 +74,7 @@ class Chip{
         this.setPosY(y);
     }
 
-    /* draw(){
-        this.ctx.save();
-        this.ctx.beginPath();
-        this.ctx.arc(this.posX, this.posY, this.radius, 0, 2 * Math.PI);
-        this.ctx.fillStyle = this.fillColor;
-        this.ctx.fill();
-
-        this.ctx.strokeStyle = this.borderColor;
-        this.ctx.lineWidth = this.borderWidth;//TODO usar esto en lugar de "set resaltado" para cambiar la ficha jugada en el tablero
-        this.ctx.stroke();
-
-        this.ctx.clip();
-        this.ctx.drawImage(this.img, this.posX - this.radius, this.posY - this.radius, this.radius * 2, this.radius * 2);
-        this.ctx.restore();
-
-        this.ctx.closePath();
-    } */
-    
-
+    //Para "desmarcar" si tras colocar una ficha exitosamente no ganó nadie
     setDefaultStyle() {
         this.borderColor = "rgba(0, 0, 0, 0.6)";
         this.borderWidth = 3;
@@ -107,7 +89,7 @@ class Chip{
         this.ctx.arc(this.posX, this.posY, this.radius, 0, 2 * Math.PI);
         this.ctx.fill();
     
-        // Crear una sombra más oscura para el chip
+        // Crear una sombra más oscura
         this.ctx.shadowColor = 'rgba(0, 0, 0, 0.8';  // Cambiar el valor de opacidad
         this.ctx.shadowBlur = 8;  // Aumentar la intensidad de la sombra
         this.ctx.shadowOffsetX = 4;

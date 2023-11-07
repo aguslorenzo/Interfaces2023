@@ -1,4 +1,4 @@
-/* window.onload = function() {
+window.onload = function() {
     let loader = document.querySelector(".loader-bg");
     let percentageElement = document.querySelector(".loader-percentage");
     loader.style.display = "block";
@@ -18,7 +18,7 @@
 
   updatePercentage();
   };
- */
+
 let menu = document.querySelector(".menu");
 let nav = document.querySelector(".sidebar");
 let menuBg = document.getElementById("menu-bg");
